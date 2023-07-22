@@ -13,9 +13,11 @@
 
 .form__input {
   background-color: #fff;
-  border: none;
   width: 100%;
   padding: 20px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
   border-bottom: 1px solid #f1f1f1;
   margin-bottom: 10px;
 }
@@ -26,6 +28,7 @@
   border-radius: 3px;
   color: #fff;
   font-size: 24px;
+  line-height: 29px;
   font-weight: 700;
   width: 100%;
   padding: 20px;
@@ -37,4 +40,18 @@
   font-size: 12px;
   line-height: 16px;
   color: #da132c;
+}
+
+@media screen and (max-width: 600px) {
+  .form__input {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .form__submit {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px;
+  }
 }
