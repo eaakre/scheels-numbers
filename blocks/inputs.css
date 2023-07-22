@@ -1,0 +1,37 @@
+.inputs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.inputs__button {
+  width: 100%;
+  background-color: #1d1d1d;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  border: transparent;
+  border-radius: 3px;
+  padding: 10px 0;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.inputs__button_max-width {
+  max-width: 450px;
+}
+
+.inputs__button:hover {
+  background-color: #2d2d2d;
+}
+
+.inputs__button:active {
+  background-color: #000;
+}
+
+@media screen and (max-width: 900px) {
+  .inputs__button {
+    margin: 20px 0 0;
+    width: 100%;
+    max-width: none;
+  }
+}

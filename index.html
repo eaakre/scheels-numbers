@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pages/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f2fed757ef.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/index.js" defer></script>
+    <title>Scheels</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="page__header header">
+        <input type="checkbox" class="header__checkbox" id="check" />
+        <label for="check" class="header__checkbox-label">
+          <i class="fa-solid fa-bars fa-2xl header__menu"></i>
+        </label>
+
+        <p class="header__logo">SCHEELS</p>
+        <div class="header__icons">
+          <i class="fa-regular fa-circle-question fa-2xl header__info"></i>
+          <i class="fa-solid fa-gear fa-2xl header__settings"></i>
+        </div>
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a
+              onclick="openAbout()"
+              href="#info-modal"
+              class="header__list-link"
+              >About</a
+            >
+          </li>
+          <li class="header__list-item">
+            <a onclick="openSettings()" href="#" class="header__list-link"
+              >Settings</a
+            >
+          </li>
+        </ul>
+      </header>
+      <main class="content">
+        <section class="content__intro intro">
+          <h1 class="intro__title">Welcome</h1>
+          <p class="intro__subtitle">to the SCHEELS number generator!</p>
+          <div class="intro__image-container">
+            <div class="intro__image-circle"></div>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="intro__image"
+              aria-hidden="true"
+              height="250px"
+              viewBox="0 0 576 512"
+            >
+              <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+
+              <path
+                d="M450.7 38c-8.3-6-19.1-7.7-28.8-4.4l-48 16c-16.8 5.6-25.8 23.7-20.2 40.5s23.7 25.8 40.5 20.2l5.9-2V160H384c-17.7 0-32 14.3-32 32s14.3 32 32 32h48 48c17.7 0 32-14.3 32-32s-14.3-32-32-32H464V64c0-10.3-4.9-19.9-13.3-26zM160 480c9 0 17.5-3.8 23.6-10.4l88-96c11.9-13 11.1-33.3-2-45.2s-33.3-11.1-45.2 2L192 365.7V64c0-17.7-14.3-32-32-32s-32 14.3-32 32V365.7L95.6 330.4c-11.9-13-32.2-13.9-45.2-2s-13.9 32.2-2 45.2l88 96C142.5 476.2 151 480 160 480zM418.3 307a32 32 0 1 1 27.4 57.9A32 32 0 1 1 418.3 307zM405.1 419.8l-6.8 9.2c-10.5 14.2-7.5 34.2 6.7 44.8s34.2 7.5 44.8-6.7l48.8-65.8c14-18.9 21.5-41.7 21.5-65.2c0-48.6-39.4-88-88-88s-88 39.4-88 88c0 39.2 25.6 72.4 61.1 83.8z"
+              />
+            </svg>
+          </div>
+        </section>
+        <section class="content__inputs inputs">
+          <button
+            class="inputs__button inputs__button_max-width"
+            id="inputs__run"
+          >
+            Run
+          </button>
+          <button
+            class="inputs__button inputs__button_max-width"
+            id="inputs__reset"
+          >
+            Reset
+          </button>
+        </section>
+        <section class="content__output output">
+          <ul class="output__list"></ul>
+        </section>
+
+        <div class="modal" id="info-modal">
+          <div class="modal__container">
+            <button class="modal__close" id="info-close"></button>
+            <h2 class="modal__title">About</h2>
+            <p class="modal__paragraph">
+              This program will print every number from the minimum to the
+              maximum set numbers. Every number divisible by 3 will be replaced
+              by the company name. Every number divisible by 5 will be replaced
+              by the company website extension. The default settings are as
+              follows:
+            </p>
+            <ul class="modal__list">
+              <li class="modal__list-item">Minimum: 1</li>
+              <li class="modal__list-item">Maximum: 100</li>
+              <li class="modal__list-item">Company: SCHEELS</li>
+              <li class="modal__list-item">Extension: .COM</li>
+            </ul>
+            <p class="modal__paragraph">
+              These settings may be changed by clicking on the settings button.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal" id="settings-modal">
+          <div class="modal__container">
+            <button class="modal__close" id="settings-close"></button>
+            <h2 class="modal__title">Settings</h2>
+            <form class="modal__form form">
+              <label class="form__label" for="min">Minimum #:</label>
+              <input
+                class="form__input"
+                type="number"
+                name="min"
+                id="min"
+                required
+              />
+
+              <label class="form__label" for="max">Maximum #:</label>
+              <input
+                class="form__input"
+                type="number"
+                name="max"
+                id="max"
+                required
+              />
+
+              <label class="form__label" for="company">Company:</label>
+              <input
+                class="form__input"
+                type="text"
+                name="company"
+                id="company"
+                required
+              />
+
+              <label class="form__label" for="extension">Extension:</label>
+              <input
+                class="form__input"
+                type="text"
+                name="extension"
+                id="extension"
+                required
+              />
+
+              <input type="submit" value="Submit" class="form__submit" />
+              <p class="form__error">
+                *Maxmimum # must be greater than or equal to min
+              </p>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

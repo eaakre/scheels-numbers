@@ -1,0 +1,38 @@
+.output {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.output__list {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.output__list-item {
+  list-style: none;
+  padding: 5px 0;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.output__text {
+  color: #000;
+}
+
+.output__list-item:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.output__list-item_start {
+  text-align: start;
+}
+
+@media screen and (max-width: 600px) {
+  .output__list {
+    padding: 20px 0;
+  }
+}

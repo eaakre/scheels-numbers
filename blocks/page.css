@@ -1,0 +1,29 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+.page {
+  font-family: "Inter", sans-serif;
+  max-width: 1400px;
+  min-height: 100vh;
+}
+
+.page__header {
+  margin: 0px 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .page__header {
+    margin: 0px 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page__header {
+    margin: 0px 20px;
+    padding: 0;
+  }
+}
