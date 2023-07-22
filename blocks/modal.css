@@ -77,4 +77,14 @@
     height: 26px;
     width: 26px;
   }
+
+  .modal__paragraph {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .modal__list-item {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
