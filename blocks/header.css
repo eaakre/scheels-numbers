@@ -31,18 +31,13 @@
 
 .header__icons {
   display: flex;
-  margin-right: 20px;
+  align-items: center;
+  margin: 0 20px;
 }
 
-.header__info {
+.header__icon {
   color: #da132c;
-  margin: 0 30px 0 0;
-  cursor: pointer;
-}
-
-.header__settings {
-  color: #da132c;
-  margin: 0;
+  margin: 0 20px 0 0;
   cursor: pointer;
 }
 
