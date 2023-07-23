@@ -33,7 +33,7 @@
   width: 250px;
   position: absolute;
   top: 100px;
-  right: 20%;
+  right: 25%;
   background-color: transparent;
 }
 
@@ -41,7 +41,6 @@
   position: relative;
   width: 450px;
   height: 450px;
-  /* background-color: #da132c; */
   background-color: #f1f1f1;
   border-radius: 50%;
 }
@@ -58,7 +57,7 @@
   fill: #da132c;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1200px) {
   .intro__title {
     margin: 100px 0 0 10px;
   }
@@ -69,7 +68,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .intro__image-container {
     display: none;
   }

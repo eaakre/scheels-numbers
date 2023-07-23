@@ -28,13 +28,13 @@
   background-color: #000;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1200px) {
   .inputs__button_max-width {
     max-width: 350px;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .inputs__button {
     margin: 20px 0 0;
     width: 100%;
