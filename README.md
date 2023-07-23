@@ -22,7 +22,7 @@ This program is setup to be mobile responsive.
 ## Screenshots
 
 Desktop Screenshot
-![Desktop screenshot](images/desktop.png)
+![Desktop screenshot](images/desktop-image.png)
 
 Mobile Screenshot
-![Mobile screenshot](images/mobile.png)
+![Mobile screenshot](images/mobile-image.png)
