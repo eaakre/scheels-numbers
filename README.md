@@ -17,12 +17,12 @@ These settings may be changed by clicking on the settings button.
 
 ## Responsiveness
 
-This program is setup to be mobile responsive.
+This program is set up to be mobile responsive.
 
-## Screenshots
+## Desktop Screenshot
 
-Desktop Screenshot
 ![Desktop screenshot](images/desktop-image.png)
 
-Mobile Screenshot
+## Mobile Screenshot
+
 ![Mobile screenshot](images/mobile-image.png)
