@@ -1,3 +1,12 @@
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(241, 241, 241, 0.75);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(241, 241, 241, 0);
+  }
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -24,23 +33,29 @@
   width: 250px;
   position: absolute;
   top: 100px;
-  right: 12%;
+  right: 20%;
   background-color: transparent;
 }
 
 .intro__image-circle {
   position: relative;
-  width: 350px;
-  height: 350px;
-  background-color: #da132c;
+  width: 450px;
+  height: 450px;
+  /* background-color: #da132c; */
+  background-color: #f1f1f1;
   border-radius: 50%;
+}
+
+.intro__image-circle_pulse {
+  animation: pulse 3s infinite;
 }
 
 .intro__image {
   position: absolute;
   background-color: transparent;
-  top: 50px;
-  left: 30px;
+  top: 75px;
+  left: 85px;
+  fill: #da132c;
 }
 
 @media screen and (max-width: 1050px) {
